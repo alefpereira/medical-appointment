@@ -44,3 +44,6 @@ buildNumber.properties
 .mvn/timing.properties
 # https://github.com/takari/maven-wrapper#usage-without-binary-jar
 .mvn/wrapper/maven-wrapper.jar
+
+### NodeJS Client Dependencies
+src/main/resources/public/node_modules
