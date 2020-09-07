@@ -1,4 +1,4 @@
 // Define the 'medicalAppointmentApp' module
-var medicalAppointmentApp = angular.module('medicalAppointmentApp', [
-  'doctorList',
+var app = angular.module('medicalAppointmentApp', [
+  'doctorModule',
 ]);

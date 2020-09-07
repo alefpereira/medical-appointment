@@ -1,9 +1,9 @@
 // import { Doctor } from "../model/doctor";
 
 angular.
-  module('doctorList').
+  module('doctorModule').
   component('doctorList', {
-    templateUrl: 'doctor-list/doctor-list.component.html',
+    templateUrl: 'doctor/doctor-list/doctor-list.component.html',
     controller: function DoctorListController() {
       this.doctors = [
         // Doctor(name='Dr. August Margin'),
