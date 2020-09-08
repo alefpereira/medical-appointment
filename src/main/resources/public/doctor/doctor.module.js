@@ -1,1 +1,1 @@
-angular.module('doctorModule', []);
+var doctorModule = angular.module('doctorModule', []);
