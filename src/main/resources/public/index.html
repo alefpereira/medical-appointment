@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html ng-app="medicalAppointmentApp">
 <head>
+    <base href="/"/>
     <meta charset="UTF-8">
     <script src="/node_modules/angular/angular.js"></script>
+    <script src="/node_modules/angular-route/angular-route.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
@@ -10,18 +12,22 @@
     <!-- <script src="node_modules/popper.js/dist/umd/popper.min.js"></script> -->
     <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
     <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
     <script src="doctor/doctor.module.js"></script>
     <script src="doctor/doctor.factory.js"></script>
     <script src="doctor/doctor-list/doctor-list.component.js"></script>
-    <script src="doctor/doctor.model.js"></script>
+    <script src="doctor/doctor-form/doctor-form.component.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Medical Appointment (Spring Boot + AngularJS)</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="/">Navbar</a>
+        <a class="navbar-brand" href="/">Home</a>
+        <a class="navbar-brand" href="/doctor/list">Doctors</a>
+        <a class="navbar-brand" href="/doctor/edit">New Doctor</a>
     </nav>
-    <doctor-list></doctor-list>
+    <!-- <doctor-list></doctor-list> -->
+    <div ng-view></div>
 </body>
 </html>
