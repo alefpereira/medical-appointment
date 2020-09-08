@@ -1,5 +1,5 @@
 <ul class="list-group">
-    <li class="list-group-item" ng-repeat='doctor in $ctrl.doctors'>
+    <li class="list-group-item" ng-repeat='doctor in $ctrl.doctors' ng-click="$ctrl.edit(doctor)">
        {{doctor.name}} 
     </li>
 </ul>
